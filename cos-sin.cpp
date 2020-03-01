@@ -16,6 +16,8 @@ int main() {
 	getchar();
 
 }
+//sin(x) = sin(0) + cos(0)*x + (sin(0)/2!)*x^2 + (-cos(0)/3!)*x^3 + ...
+//       = x - x^3/3! + x^5/5! + .. + (-1)^(k) * x^(2k+1)/n! + error , error can be omit if k is big enough.
 double sin(double x) {
 
 	double res = 0;
@@ -35,6 +37,7 @@ double sin(double x) {
 	return res;
 
 };
+//cos likely
 double cos(double x) {
 
 	double res = 0;
